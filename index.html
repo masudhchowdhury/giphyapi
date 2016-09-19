@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gif Search!</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>     
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <div id="fullsiteContainer" class = "container">
+    <div class="jumbotron">
+      <h1>Giphy Search</h1>
+      <p>Search for the gifs you're looking for! We'll pull them using the Giphy API. Click on the loaded gifs to animate them! </p>
+    </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id ="sidebar">
+
+      <form action="" method="POST" role="form">
+        <!-- <legend>Search for a GIF here!</legend> -->
+      
+        <div class="gif-form">
+          <label for="">GIF Search</label>
+          <input type="text" class="form-control" id="gif-input" placeholder="Enter text here..."> 
+        </div>
+    
+        <button type="submit" class="btn btn-primary" id = "searchButton">Submit</button>
+
+        <p></p>
+
+        <div id="buttonsView"></div>
+      </form>
+      
+    </div>
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id ="maincontent">
+
+      <div id="gifView"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
